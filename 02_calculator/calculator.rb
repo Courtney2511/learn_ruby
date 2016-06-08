@@ -7,8 +7,7 @@ def subtract(a, b)
 end
 
 def sum(array) #this is not working,  try new approach.
-  sum = 0
-  array.each { |number| sum += number }
+  array.inject(0) { |sum, x| sum + x }
 end
 
 
